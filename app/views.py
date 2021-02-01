@@ -42,7 +42,7 @@ def img(plt):
 
 
 def upload(request):
-    PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/../..'
+    PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     folder = 'databases'
     uploaded_filename = request.FILES['database'].name
 
