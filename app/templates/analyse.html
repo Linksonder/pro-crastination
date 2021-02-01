@@ -1,0 +1,16 @@
+{% extends 'base/master.html' %}
+{% block content %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">Analyse</div>
+    <div class="panel-body">
+        <p>{{filename}}</p>
+
+        <div>
+            <img src="data:image/png;base64,{{ result|safe }}">
+
+        </div>
+    </div>
+  </div>
+
+{% endblock %}

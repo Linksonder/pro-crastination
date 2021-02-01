@@ -1,0 +1,15 @@
+{% extends 'base/master.html' %}
+{% block content %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">Panel Heading</div>
+    <div class="panel-body">
+        <form method="POST" action="analyse" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input name="database" type="file">
+            <input type="submit" value="Analyseren">
+        </form>
+    </div>
+  </div>
+
+{% endblock %}
