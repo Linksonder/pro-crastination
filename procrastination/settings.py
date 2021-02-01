@@ -26,7 +26,7 @@ SECRET_KEY = 'n=2)nxehb2%gss7&r!xy+rm6kqo0(hu&l76xmx*iv$w43y4k0z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['herokudjangoapp.herokuapp.com', '127.0.0.1'] 
+ALLOWED_HOSTS = ['pro-crastination.herokuapp.com', '127.0.0.1'] 
 
 
 
