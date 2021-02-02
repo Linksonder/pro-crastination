@@ -1,15 +1,52 @@
 {% extends 'base/master.html' %}
 {% block content %}
 
-<div class="panel panel-default">
-    <div class="panel-heading">Panel Heading</div>
-    <div class="panel-body">
+<div class="card m-2">
+    <div class="card-header">
+      Welkom
+    </div>
+    <div class="card-body">
+        Welkom bij mijn opdracht voor de module Programming. 
+        In deze opdracht probeer ik het gedrag van een gebruiker te analyseren op basis van zijn browser activiteiten. 
+        Hierbij wil ik kunnen bepalen of een gebruiker op een dag productief is geweest. 
+        Hiervoor kijk ik voornamelijk naar zijn browser historie en probeer ik te bepalen of een website bezoek gerelateerd is aan werk of aan het bekende uitstelgedrag.
+    </div>
+</div>
+
+<div class="card m-2">
+    <div class="card-header">
+      Persoonlijke analyse
+    </div>
+    <div class="card-body">
+        <p>Hier kun je de history file van je browser uploaden</p>
+        <p><b>Let op!</b> We bewaren geen data en de geuploade file wordt naar analyse meteen weer verwijderd</p>
+
+        <p><b>History locatie</b></p>
+        <p>Voor deze analyse hebben we een History file nodig. Deze vind je op de volgende locaties:</p>
+        <ul>
+            <li><b>Edge</b>: AppData\Local\Microsoft\Edge\User Data\Snapshots\85.0.564.68\Default</li>
+            <li><b>Chrome</b>: AppData\Local\Google\Chrome\User Data\Default</li>
+        </ul>
+
+        <p><i>Eventuele mapjes zoals snapshot kunnen net anders zijn.</i></p>
+        
         <form method="POST" action="analyse" enctype="multipart/form-data">
             {% csrf_token %}
-            <input name="database" type="file">
-            <input type="submit" value="Analyseren">
+            <input class="file m-2" name="database" type="file"><br>
+            <input class="btn btn-primary m-2" type="submit" value="Analyseren">
         </form>
     </div>
-  </div>
+</div>
 
+
+<div class="card m-2">
+    <div class="card-header">
+      Github
+    </div>
+    <div class="card-body">
+        <p>Wil je zien hoe deze app ontwikkeld is?</p>        
+        <p>De code is beschikbaar via Github</p>
+        <p><a href="https://github.com/Linksonder/pro-crastination">https://github.com/Linksonder/pro-crastination</a></p>
+    </div>
+</div>
 {% endblock %}
