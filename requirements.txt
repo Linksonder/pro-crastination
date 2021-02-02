@@ -12,3 +12,4 @@ wordcloud==1.8.1
 plotly==4.14.3
 asyncio==3.4.3
 nest_asyncio==1.5.1
+tornado==6.1
