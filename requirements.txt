@@ -10,5 +10,5 @@ beautifulsoup4==4.9.3
 requests==2.25.1
 wordcloud==1.8.1
 plotly==4.14.3
-asyncio=3.4.3
+asyncio==3.4.3
 nest_asyncio==1.5.1
